@@ -3,12 +3,12 @@ import React from 'react'
 import Image from 'next/image'
 
 
-function Card({img="",price="",title="",category=""}) {
+function Card({img="",price="",title="",category=""}) { //card componentine gelen propsları buradan karşılıyoeruz ve eğer içi boş ise boş olma durumlarına karşı önlem alıyoruz
   return (
     <div className=' border-2 border-black w-36 '>
       <Image src={img} alt='bi' width={144} 
         height={188}/>
-        <div>{title}</div>
+        <div>{title}</div> {/*burada değişkenleri süslü parantez içerisinde yazma sebebimiz birer değişken olmaları*/}
         <div>{category}</div>
         <div>{price}</div>
         <div className=' flex justify-center'>
